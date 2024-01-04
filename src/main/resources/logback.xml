@@ -1,0 +1,14 @@
+<configuration>
+
+    <appneder name="FILE" class="ch.qos.logback.core.FileAppender">
+        <file>app.log</file>
+
+        <encoder>
+            <pattern>%date %levlel [%thread] %logger{10} [File:%line] -%kvp- %msg%n</pattern>
+        </encoder>
+    </appneder>
+
+    <root level="debug">
+        <appender-ref ref="FILE" />
+    </root>
+</configuration>
